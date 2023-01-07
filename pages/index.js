@@ -1,22 +1,23 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import { Inter } from '@next/font/google'
+import {useState} from 'react'
+// import { Inter } from '@next/font/google'
 import styles from '../styles/Home.module.css'
 
-const inter = Inter({ subsets: ['latin'] })
+// const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
     <>
       <Head>
-        <title>Economic Site</title>
-        <meta charset="utf-8" />
+        <title>Ekonopro</title>
+         <meta charset="utf-8" />
         <meta name="description" content="Economics handles the world behind the scene, from a coin to world bank" />
         <meta content="economics" name="keywords" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         {/* <!-- Favicons --> */}
-        {/* <link href="assets/img/favicon.png" rel="icon" />
-        <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" /> */}
+        <link href="assets/img/favicon.png" rel="icon" />
+        <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
         <link rel="icon" href="/favicon.ico" />
 
         {/* <!-- Google Fonts --> */}
@@ -42,7 +43,6 @@ export default function Home() {
         ======================================================== --> */}
 
       </Head>
-      <body>
         {/* <!-- ======= Header ======= --> */}
         <section id="topbar" class="topbar d-flex align-items-center">
           <div class="container d-flex justify-content-center justify-content-md-between">
@@ -59,8 +59,7 @@ export default function Home() {
         </div>
       </section>
       {/* <!-- End Top Bar --> */}
-      <div>hello world</div>
-    </body>
+      {/* <div>hello world</div> */}
     </>
   )
 }
