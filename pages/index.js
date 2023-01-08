@@ -65,12 +65,12 @@ export default function Home() {
       <a href="index.html" class="logo d-flex align-items-center">
         {/* <!-- Uncomment the line below if you also wish to use an image logo --> */}
         {/* <img src="assets/img/logo.png" alt="" />  */}
-        <h1>Impact<span>.</span></h1>
+        <h1>Ekonopro<span>.</span></h1>
       </a>
       <nav id="navbar" class="navbar">
         <ul>
           <li><a href="#hero">Home</a></li>
-          <li><a href="#about">About</a></li>
+          <li><a href="#about">About us</a></li>
           <li><a href="#services">Services</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#team">Team</a></li>
