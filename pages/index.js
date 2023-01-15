@@ -1,12 +1,12 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import { useState } from 'react'
 import { Inter } from '@next/font/google'
 import styles from '../styles/Home.module.css'
+import { createClient } from "next-sanity";
 
 // const inter = Inter({ subsets: ['latin'] })
 
-export default function Home() {
+export default function Home({pets}) {
   return (
     <>
       <Head>
@@ -67,7 +67,7 @@ export default function Home() {
             <a href="index.html" className="logo d-flex align-items-center">
               {/* <!-- Uncomment the line below if you also wish to use an image logo --> */}
               {/* <!-- <img src="assets/img/logo.png" alt=""/> --> */}
-              <h1>Impact<span>.</span></h1>
+              <h1>Impact {pets.length}<span>.</span></h1>
             </a>
             <nav id="navbar" className="navbar">
               <ul>
@@ -860,3 +860,22 @@ export default function Home() {
     </>
   )
 }
+
+const client = createClient({
+  projectId: "lqz08o01",
+  dataset: "production",
+  apiVersion: "2022-03-25",
+  useCdn: false
+});
+
+export async function getStaticProps() {
+  const pets = await client.fetch(`*[_type == "pet"]`);
+
+  return {
+    props: {
+      pets
+    }
+  };
+}
+
+
