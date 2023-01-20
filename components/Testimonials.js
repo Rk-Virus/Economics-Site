@@ -4,7 +4,7 @@ function Testimonials() {
   return (
     <>
         {/* <!-- ======= Testimonials Section ======= --> */}
-<section id="testimonials" className="testimonials" style={{background:"#340122"}}>
+<section id="testimonials" className="testimonials">
   <div className="container" data-aos="fade-up">
 
     <div className="section-header">

@@ -5,7 +5,7 @@ function Contact() {
     <>
     
 {/* <!-- ======= Contact Section ======= --> */}
-<section id="contact" className="contact" style={{background:"#340122"}}>
+<section id="contact" className="contact" >
   <div className="container" data-aos="fade-up">
 
     <div className="section-header">

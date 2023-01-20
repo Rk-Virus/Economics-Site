@@ -4,7 +4,7 @@ function CallToAction() {
   return (
     <>
      {/* <!-- ======= Call To Action Section ======= --> */}
-     <section id="call-to-action" className="call-to-action" style={{background:"#340122"}}>
+     <section id="call-to-action" className="call-to-action">
             <div className="container text-center" data-aos="zoom-out">
               <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" className="glightbox play-btn"></a>
               <h3>Call To Action</h3>

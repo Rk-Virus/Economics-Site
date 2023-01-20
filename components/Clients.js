@@ -3,7 +3,7 @@ import React from 'react'
 function Clients() {
   return (
     <> {/* <!-- ======= Clients Section ======= --> */}
-    <section id="clients" className="clients" style={{background:"#340122"}}>
+    <section id="clients" className="clients" >
       <div className="container" data-aos="zoom-out">
 
         {/* ye error de rha tha  */}

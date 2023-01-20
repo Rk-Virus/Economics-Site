@@ -3,7 +3,7 @@ import React from 'react'
 function Statuscounter() {
   return (
     <>  {/* <!-- ======= Stats Counter Section ======= --> */}
-    <section id="stats-counter" className="stats-counter" style={{background:"#340122"}}>
+    <section id="stats-counter" className="stats-counter">
       <div className="container" data-aos="fade-up">
 
         <div className="row gy-4 align-items-center">

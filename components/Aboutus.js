@@ -3,7 +3,7 @@ import React from 'react'
 function Aboutus() {
   return (
     <>{/* <!-- ======= About Us Section ======= --> */}
-    <section id="about" className="about" style={{background:"#340122"}}>
+    <section id="about" className="about">
       <div className="container" data-aos="fade-up">
 
         <div className="section-header">

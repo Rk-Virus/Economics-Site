@@ -5,7 +5,7 @@ function Footer() {
     <>
         
         {/* <!-- ======= Footer ======= --> */}
-        <footer id="footer" className="footer" style={{background:"#340122"}}>
+        <footer id="footer" className="footer" >
 
           <div className="container">
             <div className="row gy-4">

@@ -4,7 +4,7 @@ function Faq() {
   return (
     <>
     {/* <!-- ======= Frequently Asked Questions Section ======= --> */}
-<section id="faq" className="faq" style={{background:"#340122"}}>
+<section id="faq" className="faq" >
   <div className="container" data-aos="fade-up" >
 
     <div className="row gy-4">

@@ -3,12 +3,12 @@ import React from 'react'
 function Hero() {
   return (
     <> {/* <!-- ======= Hero Section ======= --> */}
-    <section id="hero" className="hero mt-0" style={{background:"#340122"}}>
+    <section id="hero" className="hero mt-0">
       <div className="container position-relative">
         <div className="row gy-5" data-aos="fade-in">
           <div className="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center text-center text-lg-start">
             <h2>Welcome to <span>Ekonopro</span></h2>
-            <ul className='d-flex flex-column align-items-start text-bold'>
+            <ul className='d-flex flex-column align-items-start text-bold text-white'>
               <li>General Economics</li>
               <li>Competitive Exams</li>
               <li>Current Affairs</li>

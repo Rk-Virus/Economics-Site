@@ -4,7 +4,7 @@ function Blogs() {
   return (
     <>
     {/* <!-- ======= Recent Blog Posts Section ======= --> */}
-<section id="recent-posts" className="recent-posts sections-bg" style={{background:"#340122"}}>
+<section id="recent-posts" className="recent-posts sections-bg">
   <div className="container" data-aos="fade-up">
 
     <div className="section-header">

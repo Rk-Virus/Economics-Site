@@ -5,7 +5,7 @@ function OurServices() {
     <>
         
 {/* <!-- ======= Our Services Section ======= --> */}
-<section id="services" className="services sections-bg" style={{background:"#340122"}}>
+<section id="services" className="services sections-bg">
   <div className="container" data-aos="fade-up">
 
     <div className="section-header">

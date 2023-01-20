@@ -4,7 +4,7 @@ function Team() {
   return (
     <>
         {/* <!-- ======= Our Team Section ======= --> */}
-<section id="team" className="team" style={{background:"#340122"}}>
+<section id="team" className="team">
   <div className="container" data-aos="fade-up">
 
     <div className="section-header">
