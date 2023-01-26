@@ -1,4 +1,3 @@
-import Head from 'next/head'
 import { createClient } from "next-sanity";
 
 // components 
@@ -15,10 +14,10 @@ import Contact from '../components/Contact';
 
 // const inter = Inter({ subsets: ['latin'] })
 
-export default function Home({ pets }) {
+export default function Home({ posts, authors, categories }) {
+  // console.log(authors)
   return (
     <>
-     
       <div >
 
         <Header />
@@ -28,15 +27,15 @@ export default function Home({ pets }) {
         <main id="main">
           <Aboutus />
 
-          <Statuscounter />
+          {/* <Statuscounter /> */}
 
-          <OurServices />
+          {/* <OurServices /> */}
 
-          <Team />
+          {/* <Team /> */}
 
-          <Faq />
+          {/* <Faq /> */}
 
-          <Blogs />
+          <Blogs posts={posts} authors={authors} categories={categories} />
 
           <Contact />
 
@@ -53,18 +52,22 @@ export default function Home({ pets }) {
 }
 
 const client = createClient({
-  projectId: "lqz08o01",
+  projectId: "iuvwtgif",
   dataset: "production",
   apiVersion: "2022-03-25",
   useCdn: false
 });
 
 export async function getStaticProps() {
-  const pets = await client.fetch(`*[_type == "pet"]`);
+  const posts = await client.fetch(`*[_type == "post"]`);
+  const authors = await client.fetch(`*[_type == "author"]`);
+  const categories = await client.fetch(`*[_type == "category"]`);
 
   return {
     props: {
-      pets
+      posts,
+      authors,
+      categories
     }
   };
 }

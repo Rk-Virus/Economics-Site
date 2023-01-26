@@ -51,23 +51,6 @@ function Faq() {
             </div>
           </div>
           {/* <!-- # Faq item--> */}
-
-          <div className="accordion-item">
-            <h3 className="accordion-header">
-              <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-3">
-                <span className="num">3.</span>
-                Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi?
-              </button>
-            </h3>
-            <div id="faq-content-3" className="accordion-collapse collapse" data-bs-parent="#faqlist">
-              <div className="accordion-body">
-                Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
-              </div>
-            </div>
-          </div>
-          {/* <!-- # Faq item--> */}
-
-
         </div>
 
       </div>

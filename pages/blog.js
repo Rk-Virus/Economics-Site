@@ -6,10 +6,7 @@ function blog() {
     return (
         <>
             <Header />
-
-
             <main id="main">
-
                 {/* <!-- ======= Breadcrumbs ======= --> */}
                 <div className="breadcrumbs">
                     <div className="page-header d-flex align-items-center" >
