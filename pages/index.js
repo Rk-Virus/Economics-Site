@@ -1,4 +1,5 @@
-import { createClient } from "next-sanity";
+// import { createClient } from "next-sanity";
+import client from '../client'
 
 // components 
 import Footer from '../components/Footer'
@@ -51,12 +52,12 @@ export default function Home({ posts, authors, categories }) {
   )
 }
 
-const client = createClient({
-  projectId: "iuvwtgif",
-  dataset: "production",
-  apiVersion: "2022-03-25",
-  useCdn: false
-});
+// const client = createClient({
+//   projectId: "iuvwtgif",
+//   dataset: "production",
+//   apiVersion: "2022-03-25",
+//   useCdn: false
+// });
 
 export async function getStaticProps() {
   const posts = await client.fetch(`*[_type == "post"]`);

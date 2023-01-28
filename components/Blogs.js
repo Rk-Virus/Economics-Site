@@ -28,7 +28,7 @@ function Blogs({posts, authors, categories}) {
           <p className="post-category">{categories.title}</p>
 
           <h2 className="title">
-            <a href="/blog">{post.title}</a>
+            <a href={"/post/"+post.slug.current}>{post.title}</a>
           </h2>
           <div className='text-black pb-4'>
             {post.body[0].children[0].text}
