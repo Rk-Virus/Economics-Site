@@ -37,7 +37,7 @@ const Post = ({ post }) => {
 
         {/* <!-- ======= Blog Details Section ======= --> */}
         <section id="blog" className="blog bg-light">
-          <div className="container" data-aos="fade-up">
+          <div className="container aos-init aos-animate" data-aos="fade-up">
 
             <div className="row g-5">
 

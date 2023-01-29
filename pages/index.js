@@ -6,10 +6,10 @@ import Footer from '../components/Footer'
 import Header from '../components/Header'
 import Hero from '../components/Hero';
 import Aboutus from '../components/Aboutus';
-import Statuscounter from '../components/Statuscounter';
-import OurServices from '../components/OurServices';
-import Team from '../components/Team';
-import Faq from '../components/Faq';
+// import Statuscounter from '../components/Statuscounter';
+// import OurServices from '../components/OurServices';
+// import Team from '../components/Team';
+// import Faq from '../components/Faq';
 import Blogs from '../components/Blogs';
 import Contact from '../components/Contact';
 

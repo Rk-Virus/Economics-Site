@@ -4,15 +4,15 @@ function Header() {
   return (
     <>
          {/* <!-- ======= Header ======= --> */}
-        <header id="header" className="header d-flex align-items-center" style={{background:"#340122"}}>
+        <header id="header" className="header d-flex align-items-center sticked">
 
           <div className="container-fluid container-xl d-flex align-items-center justify-content-between"  >
             <a href="index.html" className="logo d-flex align-items-center">
               {/* <!-- Uncomment the line below if you also wish to use an image logo --> */}
-              {/* <!-- <img src="assets/img/logo.png" alt=""/> --> */}
+              {/* <!-- <img src="/assets/img/logo.png" alt=""/> --> */}
               <h1>Ekonopro<span>.</span></h1>
             </a>
-            <nav id="navbar" className="navbar" style={{background:"#340122"}}>
+            <nav id="navbar" className="navbar">
               <ul>
                 <li ><a href="#hero">Home</a></li>
                 <li><a href="#about">About</a></li>

@@ -11,7 +11,7 @@ function Contact() {
     
 {/* <!-- ======= Contact Section ======= --> */}
 <section id="contact" className="contact bg-light" >
-  <div className="container" data-aos="fade-up">
+  <div className="container aos-init aos-animate" data-aos="fade-up">
 
     <div className="section-header text-black">
       <h2>Contact</h2>

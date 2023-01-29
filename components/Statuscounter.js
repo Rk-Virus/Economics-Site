@@ -9,7 +9,7 @@ function Statuscounter() {
         <div className="row gy-4 align-items-center">
 
           <div className="col-lg-6">
-            <img src="assets/img/stats-img.svg" alt="" className="img-fluid" />
+            <img src="/assets/img/stats-img.svg" alt="" className="img-fluid" />
           </div>
 
           <div className="col-lg-6">

@@ -43,7 +43,7 @@ function blog() {
                                 <article className="blog-details">
 
                                     <div className="post-img">
-                                        <img src="assets/img/blog/blog-1.jpg" alt="" className="img-fluid" />
+                                        <img src="/assets/img/blog/blog-1.jpg" alt="" className="img-fluid" />
                                     </div>
 
                                     <h2 className="title">Dolorum optio tempore voluptas dignissimos cumque fuga qui quibusdam quia</h2>
@@ -85,7 +85,7 @@ function blog() {
                                             Quia et suscipit non sequi. Maxime sed odit. Beatae nesciunt nesciunt accusamus quia aut ratione aspernatur dolor. Sint harum eveniet dicta exercitationem minima. Exercitationem omnis asperiores natus aperiam dolor consequatur id ex sed. Quibusdam rerum dolores sint consequatur quidem ea.
                                             Beatae minima sunt libero soluta sapiente in rem assumenda. Et qui odit voluptatem. Cum quibusdam voluptatem voluptatem accusamus mollitia aut atque aut.
                                         </p>
-                                        <img src="assets/img/blog/blog-inside-post.jpg" className="img-fluid" alt="" />
+                                        <img src="/assets/img/blog/blog-inside-post.jpg" className="img-fluid" alt="" />
 
                                         <h3>Ut repellat blanditiis est dolore sunt dolorum quae.</h3>
                                         <p>
@@ -118,7 +118,7 @@ function blog() {
                                 {/* <!-- End blog post --> */}
 
                                 <div className="post-author d-flex align-items-center">
-                                    <img src="assets/img/blog/blog-author.jpg" className="rounded-circle flex-shrink-0" alt="" />
+                                    <img src="/assets/img/blog/blog-author.jpg" className="rounded-circle flex-shrink-0" alt="" />
                                     <div>
                                         <h4>Jane Smith</h4>
                                         <div className="social-links">
@@ -139,7 +139,7 @@ function blog() {
 
                                     <div id="comment-1" className="comment">
                                         <div className="d-flex">
-                                            <div className="comment-img"><img src="assets/img/blog/comments-1.jpg" alt="" /></div>
+                                            <div className="comment-img"><img src="/assets/img/blog/comments-1.jpg" alt="" /></div>
                                             <div>
                                                 <h5><a href="">Georgia Reader</a> <a href="#" className="reply"><i className="bi bi-reply-fill"></i> Reply</a></h5>
                                                 <time dateTime="2020-01-01">01 Jan,2022</time>
@@ -154,7 +154,7 @@ function blog() {
 
                                     <div id="comment-2" className="comment">
                                         <div className="d-flex">
-                                            <div className="comment-img"><img src="assets/img/blog/comments-2.jpg" alt="" /></div>
+                                            <div className="comment-img"><img src="/assets/img/blog/comments-2.jpg" alt="" /></div>
                                             <div>
                                                 <h5><a href="">Aron Alvarado</a> <a href="#" className="reply"><i className="bi bi-reply-fill"></i> Reply</a></h5>
                                                 <time dateTime="2020-01-01">01 Jan,2022</time>
@@ -166,7 +166,7 @@ function blog() {
 
                                         <div id="comment-reply-1" className="comment comment-reply">
                                             <div className="d-flex">
-                                                <div className="comment-img"><img src="assets/img/blog/comments-3.jpg" alt="" /></div>
+                                                <div className="comment-img"><img src="/assets/img/blog/comments-3.jpg" alt="" /></div>
                                                 <div>
                                                     <h5><a href="">Lynda Small</a> <a href="#" className="reply"><i className="bi bi-reply-fill"></i> Reply</a></h5>
                                                     <time dateTime="2020-01-01">01 Jan,2022</time>
@@ -182,7 +182,7 @@ function blog() {
 
                                             <div id="comment-reply-2" className="comment comment-reply">
                                                 <div className="d-flex">
-                                                    <div className="comment-img"><img src="assets/img/blog/comments-4.jpg" alt="" /></div>
+                                                    <div className="comment-img"><img src="/assets/img/blog/comments-4.jpg" alt="" /></div>
                                                     <div>
                                                         <h5><a href="">Sianna Ramsay</a> <a href="#" className="reply"><i className="bi bi-reply-fill"></i> Reply</a></h5>
                                                         <time dateTime="2020-01-01">01 Jan,2022</time>
@@ -203,7 +203,7 @@ function blog() {
 
                                     <div id="comment-3" className="comment">
                                         <div className="d-flex">
-                                            <div className="comment-img"><img src="assets/img/blog/comments-5.jpg" alt="" /></div>
+                                            <div className="comment-img"><img src="/assets/img/blog/comments-5.jpg" alt="" /></div>
                                             <div>
                                                 <h5><a href="">Nolan Davidson</a> <a href="#" className="reply"><i className="bi bi-reply-fill"></i> Reply</a></h5>
                                                 <time dateTime="2020-01-01">01 Jan,2022</time>
@@ -219,7 +219,7 @@ function blog() {
 
                                     <div id="comment-4" className="comment">
                                         <div className="d-flex">
-                                            <div className="comment-img"><img src="assets/img/blog/comments-6.jpg" alt="" /></div>
+                                            <div className="comment-img"><img src="/assets/img/blog/comments-6.jpg" alt="" /></div>
                                             <div>
                                                 <h5><a href="">Kay Duggan</a> <a href="#" className="reply"><i className="bi bi-reply-fill"></i> Reply</a></h5>
                                                 <time dateTime="2020-01-01">01 Jan,2022</time>
