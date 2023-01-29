@@ -4,11 +4,7 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-        <title>Ekonopro</title>
-        <meta charset="utf-8" />
-        <meta name="description" content="Economics handles the world behind the scene, from a coin to world bank" />
-        <meta content="economics" name="keywords" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        
         {/* <!-- Favicons --> */}
         <link href="/assets/img/favicon.png" rel="icon" />
         <link href="/assets/img/apple-touch-icon.png" rel="apple-touch-icon" />

@@ -1,9 +1,34 @@
+import groq from 'groq'
 import client from '../../client'
 import Footer from '../../components/Footer'
 import Header from '../../components/Header'
+import imageUrlBuilder from '@sanity/image-url'
+import { PortableText } from '@portabletext/react'
+
+function urlFor(source) {
+  return imageUrlBuilder(client).image(source)
+}
+
+const ptComponents = {
+  types: {
+    image: ({ value }) => {
+      if (!value?.asset?._ref) {
+        return null
+      }
+      return (
+        <img
+          alt={value.alt || ' '}
+          loading="lazy"
+          src={urlFor(value).width(320).height(240).fit('max').auto('format')}
+        />
+      )
+    }
+  }
+}
 
 const Post = ({ post }) => {
   console.log(post)
+  const { mainImage, title = 'Missing title', authName = 'Unknown', categories, authorImage, authorBio, body = [] } = post
   return (
     // <article>
     //   <h1>{post?.slug?.current}</h1>
@@ -46,39 +71,38 @@ const Post = ({ post }) => {
                 <article className="blog-details">
 
                   <div className="post-img">
-                    <img src="/assets/img/blog/blog-1.jpg" alt="" className="img-fluid" />
+                    {mainImage && (
+                      <img src={urlFor(mainImage)
+                        .url()} alt="" className="img-fluid" />
+                    )}
                   </div>
 
-                {/* post title  */}
-                  <h2 className="title">{post?.title}</h2>
+                  {/* post title  */}
+                  <h2 className="title">{title}</h2>
 
                   <div className="meta-top">
                     <ul >
-                      <li className="d-flex align-items-center"><i className="bi bi-person"></i> Mr. XYZ</li>
-                      <li className="d-flex align-items-center"><i className="bi bi-clock"></i> <time dateTime="2020-01-01">{post?.publishedAt}</time></li>
+                      <li className="d-flex align-items-center"><i className="bi bi-person"></i> {authName}</li>
+                      {/* <li className="d-flex align-items-center"><i className="bi bi-clock"></i> <time dateTime="2020-01-01">{post?.publishedAt}</time></li> */}
                       <li className="d-flex align-items-center"><i className="bi bi-chat-dots"></i> 12 Comments</li>
                     </ul>
                   </div>
                   {/* <!-- End meta top --> */}
 
                   <div className="content text-black">
-                    <p>
-                      {post?.body[0]?.children[0]?.text}
-                    </p>
+                    <PortableText
+                      value={body}
+                      components={ptComponents}
+                    />
                   </div>
                   {/* <!-- End post content --> */}
 
                   <div className="meta-bottom">
                     <i className="bi bi-folder"></i>
-                    <ul className="cats">
-                      <li><a href="#">Business</a></li>
-                    </ul>
+                    <ul className="cats text-black">
+                      Posted in &nbsp;
+                      {categories.map(category => <li key={category}><strong><a href='#'>{category}</a></strong>,&nbsp;</li>)}
 
-                    <i className="bi bi-tags"></i>
-                    <ul className="tags">
-                      <li><a href="#">Creative</a></li>
-                      <li><a href="#">Tips</a></li>
-                      <li><a href="#">Marketing</a></li>
                     </ul>
                   </div>
                   {/* <!-- End meta bottom --> */}
@@ -87,17 +111,22 @@ const Post = ({ post }) => {
                 {/* <!-- End blog post --> */}
 
                 <div className="post-author d-flex align-items-center">
-                  <img src="/assets/img/blog/blog-author.jpg" className="rounded-circle flex-shrink-0" alt="" />
+                  {authorImage && (
+                    <img src={urlFor(authorImage)
+                      .width(100)
+                      .url()} className="rounded-circle flex-shrink-0" alt="" />
+                  )}
                   <div>
-                    <h4>Jane Smith</h4>
+                    <h4>{authName}</h4>
                     <div className="social-links">
                       <a href="https://twitters.com/#"><i className="bi bi-twitter"></i></a>
                       <a href="https://facebook.com/#"><i className="bi bi-facebook"></i></a>
                       <a href="https://instagram.com/#"><i className="biu bi-instagram"></i></a>
                     </div>
-                    <p>
-                      Itaque quidem optio quia voluptatibus dolorem dolor. Modi eum sed possimus accusantium. Quas repellat voluptatem officia numquam sint aspernatur voluptas. Esse et accusantium ut unde voluptas.
-                    </p>
+                    <PortableText
+                      value={authorBio}
+                      components={ptComponents}
+                    />
                   </div>
                 </div>
                 {/* <!-- End post author --> */}
@@ -173,7 +202,6 @@ const Post = ({ post }) => {
                     <h3 className="sidebar-title">Categories</h3>
                     <ul className="mt-3">
                       <li><a href="#">General Knowledge <span>(25)</span></a></li>
-                      <li><a href="#">Current Affairs <span>(12)</span></a></li>
                     </ul>
                   </div>
                   {/* <!-- End sidebar categories--> */}
@@ -236,9 +264,19 @@ const Post = ({ post }) => {
   )
 }
 
+const query = groq`*[_type == "post" && slug.current == $slug][0]{
+  title,
+  mainImage,
+  body,
+  "authName": author->name,
+  "authorImage": author->image,
+  "categories": categories[]->title,
+  "authorBio": author -> bio
+}`
+
 export async function getStaticPaths() {
   const paths = await client.fetch(
-    `*[_type == "post" && defined(slug.current)][].slug.current`
+    groq`*[_type == "post" && defined(slug.current)][].slug.current`
   )
 
   return {
@@ -250,9 +288,7 @@ export async function getStaticPaths() {
 export async function getStaticProps(context) {
   // It's important to default the slug so that it doesn't return "undefined"
   const { slug = "" } = context.params
-  const post = await client.fetch(`
-    *[_type == "post" && slug.current == $slug][0]
-  `, { slug })
+  const post = await client.fetch(query, { slug })
   return {
     props: {
       post

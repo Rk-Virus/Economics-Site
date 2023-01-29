@@ -21,7 +21,6 @@ function Contact() {
     <div className="row gx-lg-0 gy-4">
 
       <div className="col-lg-4">
-
         <div className="info-container d-flex flex-column align-items-center justify-content-center">
           <div className="info-item d-flex">
             <i className="bi bi-geo-alt flex-shrink-0"></i>
