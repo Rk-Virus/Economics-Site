@@ -20,7 +20,6 @@ export default function Home({ posts, authors, categories }) {
   return (
     <>
       <div >
-
         <Header />
         <Hero />
 
