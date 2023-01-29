@@ -1,14 +1,19 @@
 import React from 'react'
+import { useForm, ValidationError } from '@formspree/react';
 
 function Contact() {
+  const [state, handleSubmit] = useForm("xrgvekgj");
+  if (state.succeeded) {
+      return <p>Thanks for your message!</p>;
+  }
   return (
     <>
     
 {/* <!-- ======= Contact Section ======= --> */}
-<section id="contact" className="contact" >
+<section id="contact" className="contact bg-light" >
   <div className="container" data-aos="fade-up">
 
-    <div className="section-header">
+    <div className="section-header text-black">
       <h2>Contact</h2>
       <p>Nulla dolorum nulla nesciunt rerum facere sed ut inventore quam porro nihil id ratione ea sunt quis dolorem dolore earum</p>
     </div>
@@ -58,7 +63,7 @@ function Contact() {
       </div>
 
       <div className="col-lg-8">
-        <form action="forms/contact.php" method="post" role="form" className="php-email-form">
+        <form action="https://formspree.io/f/xrgvekgj" method="post" role="form" className="php-email-form">
           <div className="row">
             <div className="col-md-6 form-group">
               <input type="text" name="name" className="form-control" id="name" placeholder="Your Name" required/>

@@ -30,7 +30,7 @@ function Blogs({posts, authors, categories}) {
           <h2 className="title">
             <a href={"/post/"+post.slug.current}>{post.title}</a>
           </h2>
-          <div className='text-black pb-4'>
+          <div className='text-black pb-4 d-inline-block text-truncate' style={{maxWidth: 350}}>
             {post.body[0].children[0].text}
           </div>
 
