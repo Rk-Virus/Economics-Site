@@ -7,7 +7,7 @@
 
 /* Colors */
 :root {
-  --color-default: #222222;
+  --color-default: #111111;
   --color-primary:#340122;
   --color-secondary: #f85a40;
 }
@@ -2230,16 +2230,16 @@ section {
 
 .blog .blog-details .meta-bottom {
   padding-top: 10px;
-  border-top: 1px solid rgba(34, 34, 34, 0.15);
+  border-top: 1px solid rgba(176, 171, 171, 0.782);
 }
 
 .blog .blog-details .meta-bottom i {
-  color: #555555;
+  color: #ffffff;
   display: inline;
 }
 
 .blog .blog-details .meta-bottom a {
-  color: rgba(34, 34, 34, 0.8);
+  color: rgba(27, 27, 27, 0.972);
   transition: 0.3s;
 }
 
@@ -2308,7 +2308,7 @@ section {
 }
 
 .blog .post-author .social-links a {
-  color: rgba(34, 34, 34, 0.5);
+  color: rgba(44, 44, 44, 0.891);
   margin-right: 5px;
 }
 
