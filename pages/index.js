@@ -1,5 +1,6 @@
 // import { createClient } from "next-sanity";
 import client from '../client'
+import groq from 'groq'
 
 // components 
 import Footer from '../components/Footer'
@@ -15,10 +16,11 @@ import Contact from '../components/Contact';
 
 // const inter = Inter({ subsets: ['latin'] })
 
-export default function Home({ posts, authors, categories }) {
-  // console.log(authors)
+export default function Home({ posts }) {
   return (
     <>
+    <title>Ekonopro</title>
+    
       <div >
         <Header />
         <Hero />
@@ -35,7 +37,7 @@ export default function Home({ posts, authors, categories }) {
 
           {/* <Faq /> */}
 
-          <Blogs posts={posts} authors={authors} categories={categories} />
+          <Blogs posts={posts} />
 
           <Contact />
 
@@ -59,15 +61,13 @@ export default function Home({ posts, authors, categories }) {
 // });
 
 export async function getStaticProps() {
-  const posts = await client.fetch(`*[_type == "post"]`);
-  const authors = await client.fetch(`*[_type == "author"]`);
-  const categories = await client.fetch(`*[_type == "category"]`);
+  const posts = await client.fetch(
+    groq`*[_type == "post" && publishedAt < now()] | order(publishedAt desc)`
+    );
 
   return {
     props: {
-      posts,
-      authors,
-      categories
+      posts
     }
   };
 }

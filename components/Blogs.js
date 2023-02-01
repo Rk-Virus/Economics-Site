@@ -1,6 +1,7 @@
 import React from 'react'
+import Link from 'next/link'
 
-function Blogs({posts, authors, categories}) {
+function Blogs({posts}) {
   return (
     <>
     {/* <!-- ======= Recent Blog Posts Section ======= --> */}
@@ -13,17 +14,17 @@ function Blogs({posts, authors, categories}) {
 
     <div className="row gy-4 mx-2">
 
-{posts.map((post) =>{
+{posts.length > 0 && posts.map((post) =>{
   return <div className="col-xl-4 col-md-6" key={post._id}>
         <article>
           <div className="post-img">
             <img src="/assets/img/blog/blog-2.jpg" alt="" className="img-fluid"/>
           </div>
 
-          <p className="post-category">{categories.title}</p>
+          <p className="post-category">{"categoryName"}</p>
 
           <h2 className="title">
-            <a href={"/post/"+post.slug.current}>{post.title}</a>
+            <Link href={"/post/"+post.slug.current}>{post.title}</Link>
           </h2>
           <div className='text-black pb-4 d-inline-block text-truncate' style={{maxWidth: 350}}>
             {post.body[0].children[0].text}
@@ -33,10 +34,16 @@ function Blogs({posts, authors, categories}) {
             <img src="/assets/img/blog/blog-author-2.jpg" alt="" className="img-fluid post-author-img flex-shrink-0"/>
             <div className="post-meta">
 
-              <p className="post-author text-black">{authors[0].name}</p>
+              <p className="post-author text-black">
+                {/* {authors[0].name} */}
+                Author Name
+              </p>
 
               <p className="post-date">
-                <time dateTime="2022-01-01">{post.publishedAt}</time>
+                <time dateTime="2022-01-01">
+                  {/* {post.publishedAt} */}
+                  {new Date(post.publishedAt).toDateString()}
+                  </time>
               </p>
             </div>
           </div>

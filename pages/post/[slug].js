@@ -34,6 +34,8 @@ const Post = ({ post }) => {
     //   <h1>{post?.slug?.current}</h1>
     // </article>
     <>
+    <title>Ekonopro/Post</title>
+
       <Header />
       <main id="main">
         {/* <!-- ======= Breadcrumbs ======= --> */}
