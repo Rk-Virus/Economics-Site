@@ -1,4 +1,5 @@
 import groq from 'groq'
+import Link from 'next/link'
 import Image from 'next/image'
 import client from '../../client'
 import Footer from '../../components/Footer'
@@ -55,7 +56,7 @@ const Post = ({ post }) => {
           <nav>
             <div className="container">
               <ol>
-                <li><a href="/">Home</a></li>
+                <li><Link href="/">Home</Link></li>
                 <li>Blog Details</li>
               </ol>
             </div>
@@ -107,7 +108,7 @@ const Post = ({ post }) => {
                     <i className="bi bi-folder"></i>
                     <ul className="cats text-black">
                       Posted in &nbsp;
-                      {categories.map(category => <li key={category}><strong><a href='#'>{category}</a></strong>,&nbsp;</li>)}
+                      {categories.map(category => <li key={category}><strong><Link href='#'>{category}</Link></strong>,&nbsp;</li>)}
 
                     </ul>
                   </div>
@@ -127,9 +128,9 @@ const Post = ({ post }) => {
                   <div>
                     <h4>{authName}</h4>
                     <div className="social-links">
-                      <a href="https://twitters.com/#"><i className="bi bi-twitter"></i></a>
-                      <a href="https://facebook.com/#"><i className="bi bi-facebook"></i></a>
-                      <a href="https://instagram.com/#"><i className="biu bi-instagram"></i></a>
+                      <Link href="https://twitters.com/#"><i className="bi bi-twitter"></i></Link>
+                      <Link href="https://facebook.com/#"><i className="bi bi-facebook"></i></Link>
+                      <Link href="https://instagram.com/#"><i className="biu bi-instagram"></i></Link>
                     </div>
                     <PortableText
                       value={authorBio}
@@ -145,9 +146,9 @@ const Post = ({ post }) => {
 
                   <div id="comment-1" className="comment">
                     <div className="d-flex">
-                      <div className="comment-img"><Image  width={100} height={100} src="/assets/img/blog/comments-1.jpg" alt="" /></div>
+                      <div className="comment-img"><Image  width={100} height={100} src="/Linkssets/img/blog/comments-1.jpg" alt="" /></div>
                       <div className='text-dark'>
-                        <h5><a href="">Georgia Reader</a> <a href="#" className="reply"><i className="bi bi-reply-fill"></i> Reply</a></h5>
+                        <h5><Link href="">Georgia Reader</Link> <Link href="#" className="reply"><i className="bi bi-reply-fill"></i> Reply</Link></h5>
                         <time dateTime="2020-01-01">01 Jan,2022</time>
                         <p>
                           Et rerum totam nisi. Molestiae vel quam dolorum vel voluptatem et et. Est ad aut sapiente quis molestiae est qui cum soluta.
@@ -209,7 +210,7 @@ const Post = ({ post }) => {
                   <div className="sidebar-item categories">
                     <h3 className="sidebar-title">Categories</h3>
                     <ul className="mt-3">
-                      <li><a href="#">General Knowledge <span>(25)</span></a></li>
+                      <li><Link href="#">General Knowledge <span>(25)</span></Link></li>
                     </ul>
                   </div>
                   {/* <!-- End sidebar categories--> */}
@@ -220,18 +221,18 @@ const Post = ({ post }) => {
                     <div className="mt-3">
 
                       <div className="post-item mt-3">
-                        <Image  width={800} height={500} src="/assets/img/blog/blog-recent-1.jpg" alt="" />
+                        <Image  width={800} height={500} src="/Linkssets/img/blog/blog-recent-1.jpg" alt="" />
                         <div>
-                          <h4><a href="blog-details.html">Nihil blanditiis at in nihil autem</a></h4>
+                          <h4><Link href="blog-details.html">Nihil blanditiis at in nihil autem</Link></h4>
                           <time dateTime="2020-01-01">Jan 1, 2020</time>
                         </div>
                       </div>
                       {/* <!-- End recent post item--> */}
 
                       <div className="post-item">
-                        <Image  width={800} height={500} src="/assets/img/blog/blog-recent-5.jpg" alt="" />
+                        <Image  width={800} height={500} src="/Linkssets/img/blog/blog-recent-5.jpg" alt="" />
                         <div>
-                          <h4><a href="blog-details.html">Et dolores corrupti quae illo quod dolor</a></h4>
+                          <h4><Link href="blog-details.html">Et dolores corrupti quae illo quod dolor</Link></h4>
                           <time dateTime="2020-01-01">Jan 1, 2020</time>
                         </div>
                       </div>
@@ -245,9 +246,9 @@ const Post = ({ post }) => {
                   <div className="sidebar-item tags">
                     <h3 className="sidebar-title">Tags</h3>
                     <ul className="mt-3">
-                      <li><a href="#">Economics</a></li>
-                      <li><a href="#">CUET</a></li>
-                      <li><a href="#">Business</a></li>
+                      <li><Link href="#">Economics</Link></li>
+                      <li><Link href="#">CUET</Link></li>
+                      <li><Link href="#">Business</Link></li>
                     </ul>
                   </div>
                   {/* <!-- End sidebar tags--> */}
