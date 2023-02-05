@@ -1,4 +1,5 @@
 import groq from 'groq'
+import Image from 'next/image'
 import client from '../../client'
 import Footer from '../../components/Footer'
 import Header from '../../components/Header'
@@ -16,7 +17,9 @@ const ptComponents = {
         return null
       }
       return (
-        <img
+        <Image 
+        width={800}
+        height={500}
           alt={value.alt || ' '}
           loading="lazy"
           src={urlFor(value).width(320).height(240).fit('max').auto('format')}
@@ -27,7 +30,6 @@ const ptComponents = {
 }
 
 const Post = ({ post }) => {
-  console.log(post)
   const { mainImage, title = 'Missing title', authName = 'Unknown', categories, authorImage, authorBio, body = [] } = post
   return (
     // <article>
@@ -73,10 +75,12 @@ const Post = ({ post }) => {
                 <article className="blog-details">
 
                   <div className="post-img">
+                  <picture>
                     {mainImage && (
                       <img src={urlFor(mainImage)
                         .url()} alt="" className="img-fluid" />
                     )}
+                  </picture>
                   </div>
 
                   {/* post title  */}
@@ -113,11 +117,13 @@ const Post = ({ post }) => {
                 {/* <!-- End blog post --> */}
 
                 <div className="post-author d-flex align-items-center">
+                  <picture>
                   {authorImage && (
                     <img src={urlFor(authorImage)
                       .width(100)
                       .url()} className="rounded-circle flex-shrink-0" alt="" />
                   )}
+                  </picture>
                   <div>
                     <h4>{authName}</h4>
                     <div className="social-links">
@@ -139,7 +145,7 @@ const Post = ({ post }) => {
 
                   <div id="comment-1" className="comment">
                     <div className="d-flex">
-                      <div className="comment-img"><img src="/assets/img/blog/comments-1.jpg" alt="" /></div>
+                      <div className="comment-img"><Image  width={100} height={100} src="/assets/img/blog/comments-1.jpg" alt="" /></div>
                       <div className='text-dark'>
                         <h5><a href="">Georgia Reader</a> <a href="#" className="reply"><i className="bi bi-reply-fill"></i> Reply</a></h5>
                         <time dateTime="2020-01-01">01 Jan,2022</time>
@@ -214,7 +220,7 @@ const Post = ({ post }) => {
                     <div className="mt-3">
 
                       <div className="post-item mt-3">
-                        <img src="/assets/img/blog/blog-recent-1.jpg" alt="" />
+                        <Image  width={800} height={500} src="/assets/img/blog/blog-recent-1.jpg" alt="" />
                         <div>
                           <h4><a href="blog-details.html">Nihil blanditiis at in nihil autem</a></h4>
                           <time dateTime="2020-01-01">Jan 1, 2020</time>
@@ -223,7 +229,7 @@ const Post = ({ post }) => {
                       {/* <!-- End recent post item--> */}
 
                       <div className="post-item">
-                        <img src="/assets/img/blog/blog-recent-5.jpg" alt="" />
+                        <Image  width={800} height={500} src="/assets/img/blog/blog-recent-5.jpg" alt="" />
                         <div>
                           <h4><a href="blog-details.html">Et dolores corrupti quae illo quod dolor</a></h4>
                           <time dateTime="2020-01-01">Jan 1, 2020</time>
