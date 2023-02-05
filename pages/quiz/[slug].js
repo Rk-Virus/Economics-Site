@@ -6,7 +6,7 @@ import Header from '../../components/Header'
 import imageUrlBuilder from '@sanity/image-url'
 import { PortableText } from '@portabletext/react'
 
-const Quiz = ({quiz}) => {
+const Quiz = ({quiz = {}}) => {
   return (
     <>
     <title>Ekonopro/Quiz</title>
