@@ -31,7 +31,7 @@ const ptComponents = {
 }
 
 const Post = ({ post }) => {
-  const { mainImage = null, title = 'Missing title', authName = 'Unknown', categories, authorImage, authorBio, body = [] } = post
+  const { mainImage = null, title = 'Missing title', authName = 'Unknown', categories =[], authorImage=null, authorBio="", body = [] } = post
   return (
     // <article>
     //   <h1>{post?.slug?.current}</h1>
