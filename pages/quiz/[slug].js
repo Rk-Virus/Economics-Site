@@ -7,8 +7,7 @@ import imageUrlBuilder from '@sanity/image-url'
 import { PortableText } from '@portabletext/react'
 
 const Quiz = ({quiz}) => {
-  console.log(quiz)
-  const { quizName } = quiz
+  const { quizName = "Article" } = quiz
   return (
     <>
     <title>Ekonopro/Quiz</title>
