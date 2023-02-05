@@ -30,7 +30,7 @@ const ptComponents = {
   }
 }
 
-const Post = ({ post }) => {
+const Post = ({ post = {} }) => {
   const { mainImage = null, title = 'Missing title', authName = 'Unknown', categories =[], authorImage=null, authorBio="", body = [] } = post
   return (
     // <article>
