@@ -41,7 +41,7 @@ const Quiz = ({quiz}) => {
                 <div className='bg-white text-black quiz-section'>
                     <div className='container-fluid p-5'>
 
-                        <h2>{quiz.quizName}</h2>
+                        <h2>{quiz.quizName?quiz.quizName:"No Title"}</h2>
                         <h4 className='lead'>Attempt the following quitions :</h4>
                         <hr />
 
