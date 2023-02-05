@@ -7,7 +7,6 @@ import imageUrlBuilder from '@sanity/image-url'
 import { PortableText } from '@portabletext/react'
 
 const Quiz = ({quiz}) => {
-  const { quizName = "Article" } = quiz
   return (
     <>
     <title>Ekonopro/Quiz</title>
@@ -42,7 +41,7 @@ const Quiz = ({quiz}) => {
                 <div className='bg-white text-black quiz-section'>
                     <div className='container-fluid p-5'>
 
-                        <h2>{quizName}</h2>
+                        <h2>{quiz.quizName}</h2>
                         <h4 className='lead'>Attempt the following quitions :</h4>
                         <hr />
 
