@@ -1,4 +1,5 @@
 import groq from 'groq'
+import Link from 'next/link'
 import client from '../../client'
 import Footer from '../../components/Footer'
 import Header from '../../components/Header'
@@ -30,7 +31,7 @@ const Quiz = ({quiz}) => {
                     <nav>
                         <div className="container">
                             <ol>
-                                <li><a href="/">Home</a></li>
+                                <li><Link href="/">Home</Link></li>
                                 <li>Quiz Page</li>
                             </ol>
                         </div>
