@@ -24,16 +24,15 @@ export default function Document() {
         <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
         <NextScript />
         {/* <!-- Vendor JS Files --> */}
-        < Script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js" async></Script >
-        <Script src="/assets/vendor/aos/aos.js" async></Script>
-        <Script src="/assets/vendor/glightbox/js/glightbox.min.js" async></Script>
-        <Script src="/assets/vendor/purecounter/purecounter_vanilla.js" async></Script>
-        <Script src="/assets/vendor/swiper/swiper-bundle.min.js" async></Script>
-        <Script src="/assets/vendor/isotope-layout/isotope.pkgd.min.js" async></Script>
-        <Script src="/assets/vendor/php-email-form/validate.js"></Script>
+        < script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js" async></script >
+        <script src="/assets/vendor/aos/aos.js" async></script>
+        <script src="/assets/vendor/glightbox/js/glightbox.min.js" async></script>
+        <script src="/assets/vendor/purecounter/purecounter_vanilla.js" async></script>
+        <script src="/assets/vendor/swiper/swiper-bundle.min.js" async></script>
+        <script src="/assets/vendor/isotope-layout/isotope.pkgd.min.js" async></script>
 
         {/* <!-- Template Main JS File --> */}
-        <Script src="/assets/js/main.js" async></Script>
+        <script src="/assets/js/main.js" async></script>
       </body>
     </Html>
   )
