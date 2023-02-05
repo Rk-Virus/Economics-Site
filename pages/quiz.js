@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
 
@@ -23,7 +24,7 @@ function quiz() {
                     <nav>
                         <div className="container">
                             <ol>
-                                <li><a href="/">Home</a></li>
+                                <li><Link href="/">Home</Link></li>
                                 <li>Quiz Page</li>
                             </ol>
                         </div>
