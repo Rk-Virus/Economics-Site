@@ -13,21 +13,21 @@ function Footer() {
                 <a href="index.html" className="logo d-flex align-items-center">
                   <span>Ekonopro</span>
                 </a>
-                <p>The ultimate purpose of learning economic, offcourse is to understand and promote enhancement of well-being</p>
+                <p>The ultimate purpose of learning economics, offcourse is to understand and promote enhancement of well-being</p>
                 <div className="social-links d-flex mt-4">
-                  <a href="#" className="twitter"><i className="bi bi-twitter"></i></a>
-                  <a href="#" className="facebook"><i className="bi bi-facebook"></i></a>
-                  <a href="#" className="instagram"><i className="bi bi-instagram"></i></a>
-                  <a href="#" className="linkedin"><i className="bi bi-linkedin"></i></a>
+                  <a href="https://twitter.com/ekonopro?t=D9rgARBNIXkw77PzW2BUXA&s=09" className="twitter"><i className="bi bi-twitter"></i></a>
+                  <a href="https://www.facebook.com/profile.php?id=100087708252044&is_tour_dismissed=true" className="facebook"><i className="bi bi-facebook"></i></a>
+                  <a href="https://www.instagram.com/ekonopro/" className="instagram"><i className="bi bi-instagram"></i></a>
+                  <a href="https://www.linkedin.com/in/econo-pro-068a95256/" className="linkedin"><i className="bi bi-linkedin"></i></a>
                 </div>
               </div>
 
               <div className="col-lg-2 col-6 footer-links">
                 <h4>Useful Links</h4>
                 <ul>
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">About us</a></li>
-                  <li><a href="#">Services</a></li>
+                  <li><a href="/">Home</a></li>
+                  <li><a href="#about">About us</a></li>
+                  {/* <li><a href="#">Services</a></li> */}
                   <li><a href="#">Terms of service</a></li>
                   <li><a href="#">Privacy policy</a></li>
                 </ul>
@@ -36,11 +36,10 @@ function Footer() {
               <div className="col-lg-2 col-6 footer-links">
                 <h4>Our Services</h4>
                 <ul>
-                  <li><a href="#">Web Design</a></li>
-                  <li><a href="#">Web Development</a></li>
-                  <li><a href="#">Product Management</a></li>
-                  <li><a href="#">Marketing</a></li>
-                  <li><a href="#">Graphic Design</a></li>
+                  <li><a href="#about">Interactive Learning</a></li>
+                  <li><a href="#about">Lesson Plans and Curriculum Resources</a></li>
+                  <li><a href="#about">News Analyse</a></li>
+                  <li><a href="#about">Career Information</a></li>
                 </ul>
               </div>
 
@@ -51,7 +50,7 @@ function Footer() {
                   New York, NY 535022<br />
                   United States <br /><br />
                   <strong>Phone:</strong> +1 5589 55488 55<br />
-                  <strong>Email:</strong> info@example.com<br />
+                  <strong>Email:</strong> econopro@gmail.com<br />
                 </p>
 
               </div>

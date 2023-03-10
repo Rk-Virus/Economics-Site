@@ -1,4 +1,5 @@
 // import { createClient } from "next-sanity";
+import { useInfoContext } from '../context/info'
 import client from '../client'
 import groq from 'groq'
 
@@ -17,9 +18,10 @@ import Contact from '../components/Contact';
 // const inter = Inter({ subsets: ['latin'] })
 
 export default function Home({ posts }) {
+  const {info} = useInfoContext();
   return (
     <>
-    <title>Ekonopro</title>
+    <title>{info.siteName  }</title>
     
       <div >
         <Header />

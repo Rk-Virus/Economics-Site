@@ -1,4 +1,5 @@
 import '../styles/globals.css'
+import AppStore from '../context/info'
 
 
 export default function App({ Component, pageProps }) {
@@ -10,7 +11,9 @@ export default function App({ Component, pageProps }) {
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
 
-    
-    <Component {...pageProps} />
+    // Wrapping our app in AppStore
+    <AppStore>
+      <Component {...pageProps} />
+    </AppStore>
   </>
 }

@@ -3,44 +3,52 @@ import React from 'react'
 function Aboutus() {
   return (
     <>{/* <!-- ======= About Us Section ======= --> */}
-    <section id="about" className="about">
-      <div className="container aos-init aos-animate" data-aos="fade-up">
+      <section id="about" className="about">
+        <div className="container aos-init aos-animate" data-aos="fade-up">
 
-        <div className="section-header">
-          <h2>About Us</h2>
-          <p>Aperiam dolorum et et wuia molestias qui eveniet numquam nihil porro incidunt dolores placeat sunt id nobis omnis tiledo stran delop</p>
-        </div>
+          <div className="section-header">
+            <h2>About Us</h2>
+            <p style={{textAlign:'justify'}}>EKONOPRO is an Educational  Platform which provides structured, technical and effective learning in ECONOMICS.
+              <br />
+              We are dedicated to dispense high-quality, accessible and educational resources to help learners the complexity of the subject with real life example.
+              <br />
 
-        <div className="row gy-4">
-          <div className="col-lg-6">
-            <h3>Voluptatem dignissimos provident quasi corporis</h3>
-            <img src="/assets/img/about.jpg" className="img-fluid rounded-4 mb-4" alt="" />
-            <p>Ut fugiat ut sunt quia veniam. Voluptate perferendis perspiciatis quod nisi et. Placeat debitis quia recusandae odit et consequatur voluptatem. Dignissimos pariatur consectetur fugiat voluptas ea.</p>
-            <p>Temporibus nihil enim deserunt sed ea. Provident sit expedita aut cupiditate nihil vitae quo officia vel. Blanditiis eligendi possimus et in cum. Quidem eos ut sint rem veniam qui. Ut ut repellendus nobis tempore doloribus debitis explicabo similique sit. Accusantium sed ut omnis beatae neque deleniti repellendus.</p>
+              Our experienced educators create and Provide understandable, relevant and latest content of affairs of  ECONOMICS.
+              <br />
+              We are here to help you all, navigate this fascinating subject, whether you are an individual, student or a business professional.
+
+            </p>
           </div>
-          <div className="col-lg-6">
-            <div className="content ps-0 ps-lg-5">
-              <p className="fst-italic">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                magna aliqua.
-              </p>
-              <ul>
-                <li><i className="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                <li><i className="bi bi-check-circle-fill"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                <li><i className="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
-              </ul>
-              <p>
-                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident
-              </p>
 
+          <div className="row gy-4">
+            {/* <div className="col-lg-6">
+              <h3>Voluptatem dignissimos provident quasi corporis</h3>
+              <img src="/assets/img/about.jpg" className="img-fluid rounded-4 mb-4" alt="" />
+              
+            </div> */}
+            <div className="col-lg-6">
+              <div className="content ps-0 ps-lg-5">
+                <p className="fst-italic">
+                  What we do for you ?
+                </p>
+                <ul>
+                  <li><i className="bi bi-check-circle-fill"></i> <b> Interactive learning tool:</b> access to 24*7 quiz session that allow students to experiment their concepts and assess their knowledge.</li>
+                  <li><i className="bi bi-check-circle-fill"></i><b> Lesson plans and curriculum resources:</b> we offer lesson plans and activity guides that helps learners to incorporate ECONOMICS and track their preparation.</li>
+                  <li><i className="bi bi-check-circle-fill"></i><b> News Analyse:</b> we provide news and analysis of current events in the economy and financial markets, to make learners up-to-date and develop a deeper understanding of ECONOMICS concepts.
+                  </li>
+
+                  <li><i className="bi bi-check-circle-fill"></i> <b>Career Information:</b> we provide counselling about career in ECONOMICS, to help those who are considering pursuing a degree in ECONOMICS or finance and want to learn more about potential job opportunities.
+
+                  </li>
+                </ul>
+
+              </div>
             </div>
           </div>
-        </div>
 
-      </div>
-    </section>
-    {/* <!-- End About Us Section --> */}</>
+        </div>
+      </section>
+      {/* <!-- End About Us Section --> */}</>
   )
 }
 
