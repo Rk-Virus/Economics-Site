@@ -49,8 +49,8 @@ function Footer() {
                   A108 Adam Street <br />
                   New York, NY 535022<br />
                   United States <br /><br />
-                  <strong>Phone:</strong> +1 5589 55488 55<br />
-                  <strong>Email:</strong> econopro@gmail.com<br />
+                  <strong>Phone:</strong> <a href='tel:+1 55895548855'>+1 5589 55488 55</a> <br />
+                  <strong>Email:</strong> <a href='mailto:econopro@gmail.com'>econopro@gmail.com</a> <br />
                 </p>
 
               </div>

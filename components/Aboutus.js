@@ -8,7 +8,7 @@ function Aboutus() {
 
           <div className="section-header">
             <h2>About Us</h2>
-            <p style={{textAlign:'justify'}}>EKONOPRO is an Educational  Platform which provides structured, technical and effective learning in ECONOMICS.
+            <p style={{textAlign:'justify'}}><b>EKONOPRO</b> is an Educational  Platform which provides structured, technical and effective learning in ECONOMICS.
               <br />
               We are dedicated to dispense high-quality, accessible and educational resources to help learners the complexity of the subject with real life example.
               <br />
@@ -27,11 +27,11 @@ function Aboutus() {
               
             </div> */}
             <div className="col-lg-6">
-              <div className="content ps-0 ps-lg-5">
-                <p className="fst-italic">
+              {/* <div className="content ps-0 ps-lg-5"> */}
+                {/* <h3 className="fst-italic">
                   What we do for you ?
-                </p>
-                <ul>
+                </h3> */}
+                {/* <ul>
                   <li><i className="bi bi-check-circle-fill"></i> <b> Interactive learning tool:</b> access to 24*7 quiz session that allow students to experiment their concepts and assess their knowledge.</li>
                   <li><i className="bi bi-check-circle-fill"></i><b> Lesson plans and curriculum resources:</b> we offer lesson plans and activity guides that helps learners to incorporate ECONOMICS and track their preparation.</li>
                   <li><i className="bi bi-check-circle-fill"></i><b> News Analyse:</b> we provide news and analysis of current events in the economy and financial markets, to make learners up-to-date and develop a deeper understanding of ECONOMICS concepts.
@@ -40,9 +40,9 @@ function Aboutus() {
                   <li><i className="bi bi-check-circle-fill"></i> <b>Career Information:</b> we provide counselling about career in ECONOMICS, to help those who are considering pursuing a degree in ECONOMICS or finance and want to learn more about potential job opportunities.
 
                   </li>
-                </ul>
+                </ul> */}
 
-              </div>
+              {/* </div> */}
             </div>
           </div>
 
