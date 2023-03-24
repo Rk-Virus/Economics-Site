@@ -6,14 +6,14 @@ function OurServices() {
         
 {/* <!-- ======= Our Services Section ======= --> */}
 <section id="services" className="services sections-bg">
-  <div className="container" data-aos="fade-up">
+  <div className="container aos-init aos-animate" data-aos="fade-up">
 
     <div className="section-header">
       <h2>Our Services</h2>
-      <p>Aperiam dolorum et et wuia molestias qui eveniet numquam nihil porro incidunt dolores placeat sunt id nobis omnis tiledo stran delop</p>
+      {/* <p>Aperiam dolorum et et wuia molestias qui eveniet numquam nihil porro incidunt dolores placeat sunt id nobis omnis tiledo stran delop</p> */}
     </div>
 
-    <div className="row gy-4" data-aos="fade-up" data-aos-delay="100">
+    <div className="row gy-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
 
       <div className="col-lg-4 col-md-6">
         <div className="service-item  position-relative">

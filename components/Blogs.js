@@ -29,6 +29,8 @@ const ptComponents = {
 }
 
 function Blogs({ posts }) {
+  // console.log(posts)
+
   return (
     <>
       {/* <!-- ======= Recent Blog Posts Section ======= --> */}

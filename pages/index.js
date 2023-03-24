@@ -14,19 +14,21 @@ import OurServices from '../components/OurServices';
 // import Faq from '../components/Faq';
 import Blogs from '../components/Blogs';
 import Contact from '../components/Contact';
+import News from '../components/News'
+import Quizes from '../components/Quizes'
 
 // const inter = Inter({ subsets: ['latin'] })
 
-export default function Home({ posts }) {
+export default function Home({ posts, quizes }) {
   const {info} = useInfoContext();
   return (
     <>
-    <title>{info.siteName  }</title>
+    <title>{info.siteName}</title>
     
       <div >
         <Header />
-        <Hero />
 
+        <Hero />
 
         <main id="main">
           <Aboutus />
@@ -40,6 +42,10 @@ export default function Home({ posts }) {
           {/* <Faq /> */}
 
           <Blogs posts={posts} />
+
+          <News />
+
+          <Quizes quizes={quizes} />
 
           <Contact />
 
@@ -66,10 +72,14 @@ export async function getStaticProps() {
   const posts = await client.fetch(
     groq`*[_type == "post" && publishedAt < now()] | order(publishedAt desc)`
     );
+    const quizes = await client.fetch(
+      groq`*[_type == "quiz" && publishedAt < now()] | order(publishedAt desc)`
+      );
 
   return {
     props: {
-      posts
+      posts,
+      quizes
     }
   };
 }
