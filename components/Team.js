@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 
 function Team() {
   return (
@@ -16,7 +17,7 @@ function Team() {
 
       <div className="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
         <div className="member">
-          <img src="/assets/img/team/team-1.jpg" className="img-fluid" alt=""/>
+          <Image fill src="/assets/img/team/team-1.jpg" className="img-fluid" alt=""/>
           <h4>Walter White</h4>
           <span>Web Development</span>
           <div className="social">
@@ -31,7 +32,7 @@ function Team() {
 
       <div className="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
         <div className="member">
-          <img src="/assets/img/team/team-2.jpg" className="img-fluid" alt=""/>
+          <Image fill src="/assets/img/team/team-2.jpg" className="img-fluid" alt=""/>
           <h4>Sarah Jhinson</h4>
           <span>Marketing</span>
           <div className="social">

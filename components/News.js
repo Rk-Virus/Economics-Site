@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import client from '../client'
 import imageUrlBuilder from '@sanity/image-url'
 import Pagination from './Pagination'
@@ -80,9 +81,8 @@ function News() {
         {post.content && post.content.substring(0,50)}...
 
         <div className="d-flex align-items-center mt-4">
-          <img src="/assets/img/blog/blog-author.png" alt="author image" className="img-fluid post-author-img flex-shrink-0" />
+          <img fill src="/assets/img/blog/blog-author.png" alt="author image" className="img-fluid post-author-img flex-shrink-0" />
           <div className="post-meta">
-
             <p className="post-author text-black">
               {post.author && <>{post.author}</>}
             </p>
@@ -106,15 +106,15 @@ function News() {
   <nav aria-label="Page navigation" className='mt-5'>
     <ul className="pagination justify-content-around">
       <li className="page-item">
-        <a className="page-link" href="#recent-news" onClick={handlePrev}>
+        <Link className="page-link" href="#recent-news" onClick={handlePrev}>
           <ArrowLeft/>
-          Back</a>
+          Back</Link>
       </li>
       {/* <li className="page-item">&nbsp;&nbsp;&nbsp;&nbsp;</li> */}
       <li className="page-item">
-        <a className="page-link" href="#recent-news" onClick={handleNext}>Next
+        <Link className="page-link" href="#recent-news" onClick={handleNext}>Next
         <ArrowRight/>
-        </a>
+        </Link>
       </li>
     </ul>
   </nav>

@@ -1,9 +1,11 @@
 import React from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import client from '../client'
 import imageUrlBuilder from '@sanity/image-url'
 import { PortableText } from '@portabletext/react'
 import Pagination from './Pagination'
+
 
 function urlFor(source) {
   return imageUrlBuilder(client).image(source)
@@ -16,7 +18,7 @@ const ptComponents = {
         return null
       }
       return (
-        <Image
+        <Image fill
           width={800}
           height={500}
           alt={value.alt || ' '}
@@ -48,7 +50,7 @@ function Quizes({ quizes }) {
                 <div className="quiz-img">
                   {
                   // quiz.mainImage &&
-                   <img src="https://cdn.pixabay.com/photo/2017/07/20/03/53/homework-2521144_1280.jpg"
+                  <img src={"https://cdn.pixabay.com/photo/2017/07/20/03/53/homework-2521144_1280.jpg"}
                     alt="blog image" className="img-fluid" />}
                 </div>
 
@@ -62,7 +64,7 @@ function Quizes({ quizes }) {
                 {/* {quiz.body[0].children[0].text.substring(0, 100) + "..."} */}
 
                 <div className="d-flex align-items-center mt-4">
-                  <img src="/assets/img/blog/blog-author.png" alt="author image" className="img-fluid flex-shrink-0" style={{width:30}} />
+                  <img fill src="/assets/img/blog/blog-author.png" alt="author image" className="img-fluid flex-shrink-0" />
                   <div className="quiz-meta">
 
                     <p className="quiz-author text-black">

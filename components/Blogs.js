@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import client from '../client'
 import imageUrlBuilder from '@sanity/image-url'
 import { PortableText } from '@portabletext/react'
@@ -17,8 +18,7 @@ const ptComponents = {
       }
       return (
         <Image
-          width={800}
-          height={500}
+          fill
           alt={value.alt || ' '}
           loading="lazy"
           src={urlFor(value).width(320).height(240).fit('max').auto('format')}
@@ -47,7 +47,8 @@ function Blogs({ posts }) {
             return <div className="col-xl-4 col-md-6" key={post._id}>
               <article>
                 <div className="post-img">
-                  {post.mainImage && <img src={urlFor(post.mainImage)}
+                  {post.mainImage && <img
+                   src={urlFor(post.mainImage)}
                     alt="blog image" className="img-fluid" />}
                 </div>
 
@@ -59,7 +60,9 @@ function Blogs({ posts }) {
                 {post.body[0].children[0].text.substring(0, 100) + "..."}
 
                 <div className="d-flex align-items-center mt-4">
-                  <img src="/assets/img/blog/blog-author.png" alt="author image" className="img-fluid post-author-img flex-shrink-0" />
+                  <img
+                     src="/assets/img/blog/blog-author.png" alt="author image" className="img-fluid post-author-img flex-shrink-0" />
+
                   <div className="post-meta">
 
                     <p className="post-author text-black">

@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 
 function Testimonials() {
   return (
@@ -22,7 +23,7 @@ function Testimonials() {
           <div className="testimonial-wrap">
             <div className="testimonial-item">
               <div className="d-flex align-items-center">
-                <img src="/assets/img/testimonials/testimonials-3.jpg" className="testimonial-img flex-shrink-0" alt=""/>
+                <Image fill src="/assets/img/testimonials/testimonials-3.jpg" className="testimonial-img flex-shrink-0" alt=""/>
                 <div>
                   <h3>Jena Karlis</h3>
                   <h4>Store Owner</h4>
