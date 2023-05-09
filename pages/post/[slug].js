@@ -104,7 +104,7 @@ const Post = ({ post = {} }) => {
                     <i className="bi bi-folder"></i>
                     <ul className="cats text-black">
                       Posted in &nbsp;
-                      {categories.map(category => <li key={category}><strong><Link href='#'>{category}</Link></strong>,&nbsp;</li>)}
+                      {categories && categories.map(category => <li key={category}><strong><Link href='#'>{category}</Link></strong>,&nbsp;</li>)}
 
                     </ul>
                   </div>
@@ -138,12 +138,11 @@ const Post = ({ post = {} }) => {
                 {/* <!-- End post author --> */}
 
                 <div className="comments">
-
                   <h4 className="comments-count">8 Comments</h4>
 
                   <div id="comment-1" className="comment">
                     <div className="d-flex">
-                      {/* <div className="comment-img"><img fill src="/assets/img/blog/comments-1.jpg" alt="" /></div> */}
+                      <div className="comment-img"><img fill src="/assets/img/blog/comments-1.jpg" alt="" /></div>
                       <div className='text-dark'>
                         <h5><Link href="">Georgia Reader</Link> <Link href="#" className="reply"><i className="bi bi-reply-fill"></i> Reply</Link></h5>
                         <time dateTime="2020-01-01">01 Jan,2022</time>
