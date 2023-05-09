@@ -1,7 +1,6 @@
 import groq from 'groq'
 import Image from 'next/image'
 import Link from 'next/link'
-import Image from 'next/image'
 import client from '../../client'
 import Footer from '../../components/Footer'
 import Header from '../../components/Header'
