@@ -24,7 +24,7 @@ function Hero() {
             </div>*/}
           </div> 
           <div className="col-lg-6 order-1 order-lg-2">
-            <img src="/assets/img/hero-img.jpeg" className="img-fluid aos-init aos-animate" alt="hero image" fill data-aos="zoom-out" data-aos-delay="100" />
+            <img src="/assets/img/hero-img.jpeg" className="img-fluid aos-init aos-animate" alt="hero image" data-aos="zoom-out" data-aos-delay="100" />
           </div>
         </div>
       </div>

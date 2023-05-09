@@ -18,8 +18,7 @@ const ptComponents = {
         return null
       }
       return (
-        <Image
-        fill 
+        <img
           alt={value.alt || ' '}
           loading="lazy"
           src={urlFor(value).width(320).height(240).fit('max').auto('format')}
@@ -74,8 +73,8 @@ const Post = ({ post = {} }) => {
                   <div className="post-img">
                   <picture>
                     {mainImage && (
-                      <Image
-                      fill src={urlFor(mainImage)
+                      <img
+            src={urlFor(mainImage)
                         .url()} alt="post image" className="img-fluid" />
                     )}
                   </picture>
@@ -144,7 +143,7 @@ const Post = ({ post = {} }) => {
 
                   <div id="comment-1" className="comment">
                     <div className="d-flex">
-                      <div className="comment-img"><Image fill src="/Linkssets/img/blog/comments-1.jpg" alt="" /></div>
+                      {/* <div className="comment-img"><img fill src="/assets/img/blog/comments-1.jpg" alt="" /></div> */}
                       <div className='text-dark'>
                         <h5><Link href="">Georgia Reader</Link> <Link href="#" className="reply"><i className="bi bi-reply-fill"></i> Reply</Link></h5>
                         <time dateTime="2020-01-01">01 Jan,2022</time>
@@ -219,20 +218,10 @@ const Post = ({ post = {} }) => {
                     <div className="mt-3">
 
                       <div className="post-item mt-3">
-                        <Image
-                        fill  src="/Linkssets/img/blog/blog-recent-1.jpg" alt="" />
+                        <img
+               src="/assets/img/blog/blog-recent-1.jpg" alt="" />
                         <div>
                           <h4><Link href="blog-details.html">Nihil blanditiis at in nihil autem</Link></h4>
-                          <time dateTime="2020-01-01">Jan 1, 2020</time>
-                        </div>
-                      </div>
-                      {/* <!-- End recent post item--> */}
-
-                      <div className="post-item">
-                        <Image
-                        fill src="/Linkssets/img/blog/blog-recent-5.jpg" alt="" />
-                        <div>
-                          <h4><Link href="blog-details.html">Et dolores corrupti quae illo quod dolor</Link></h4>
                           <time dateTime="2020-01-01">Jan 1, 2020</time>
                         </div>
                       </div>

@@ -50,7 +50,7 @@ function Quizes({ quizes }) {
                 <div className="quiz-img">
                   {
                   // quiz.mainImage &&
-                  <img src={"https://cdn.pixabay.com/photo/2017/07/20/03/53/homework-2521144_1280.jpg"}
+                  <img src="https://cdn.pixabay.com/photo/2017/07/20/03/53/homework-2521144_1280.jpg"
                     alt="blog image" className="img-fluid" />}
                 </div>
 
@@ -63,8 +63,7 @@ function Quizes({ quizes }) {
                 </h2>
                 {/* {quiz.body[0].children[0].text.substring(0, 100) + "..."} */}
 
-                <div className="d-flex align-items-center mt-4">
-                  <img fill src="/assets/img/blog/blog-author.png" alt="author image" className="img-fluid flex-shrink-0" />
+                <div className="d-flex align-items-center mt-4">  
                   <div className="quiz-meta">
 
                     <p className="quiz-author text-black">
