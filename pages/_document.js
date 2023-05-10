@@ -1,5 +1,4 @@
 import { Html, Head, Main, NextScript } from 'next/document'
-import Script from 'next/script'
 
 export default function Document() {
   return (
@@ -21,7 +20,7 @@ export default function Document() {
       </Head>
       <body>
         <Main />
-        <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+        <a href="#" className="scroll-top d-flex align-items-center justify-content-center"><i className="bi bi-arrow-up-short"></i></a>
         <NextScript />
         {/* <!-- Vendor JS Files --> */}
         < script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js" async></script >

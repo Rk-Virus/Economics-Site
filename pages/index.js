@@ -43,7 +43,7 @@ export default function Home({ posts, quizes }) {
 
           <Blogs posts={posts} />
 
-          <News />
+          {/* <News /> */}
 
           <Quizes quizes={quizes} />
 

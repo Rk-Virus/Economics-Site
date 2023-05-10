@@ -31,7 +31,7 @@ const ptComponents = {
 }
 
 function Quizes({ quizes }) {
-  console.log(quizes)
+  // console.log(quizes)
   return (
     <>
       {/* <!-- ======= Recent Blog quizes Section ======= --> */}
