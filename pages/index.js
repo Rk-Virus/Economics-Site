@@ -45,7 +45,7 @@ export default function Home({ posts, quizes }) {
 
           {/* <News /> */}
 
-          <Quizes quizes={quizes} />
+          {/* <Quizes quizes={quizes} /> */}
 
           <Contact />
 

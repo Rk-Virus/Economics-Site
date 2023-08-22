@@ -137,57 +137,6 @@ const Post = ({ post = {} }) => {
                 </div>
                 {/* <!-- End post author --> */}
 
-                <div className="comments">
-                  <h4 className="comments-count">8 Comments</h4>
-
-                  <div id="comment-1" className="comment">
-                    <div className="d-flex">
-                      <div className="comment-img"><img fill src="/assets/img/blog/comments-1.jpg" alt="" /></div>
-                      <div className='text-dark'>
-                        <h5><Link href="">Georgia Reader</Link> <Link href="#" className="reply"><i className="bi bi-reply-fill"></i> Reply</Link></h5>
-                        <time dateTime="2020-01-01">01 Jan,2022</time>
-                        <p>
-                          Et rerum totam nisi. Molestiae vel quam dolorum vel voluptatem et et. Est ad aut sapiente quis molestiae est qui cum soluta.
-                          Vero aut rerum vel. Rerum quos laboriosam placeat ex qui. Sint qui facilis et.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  {/* <!-- End comment #1 --> */}
-
-
-                  <div className="reply-form text-dark">
-
-                    <h4 >Leave a Reply</h4>
-                    <p>Your email address will not be published. Required fields are marked * </p>
-                    <form action="">
-                      <div className="row">
-                        <div className="col-md-6 form-group">
-                          <input name="name" type="text" className="form-control" placeholder="Your Name*" />
-                        </div>
-                        <div className="col-md-6 form-group">
-                          <input name="email" type="text" className="form-control" placeholder="Your Email*" />
-                        </div>
-                      </div>
-                      <div className="row">
-                        <div className="col form-group">
-                          <input name="website" type="text" className="form-control" placeholder="Your Website" />
-                        </div>
-                      </div>
-                      <div className="row">
-                        <div className="col form-group">
-                          <textarea name="comment" className="form-control" placeholder="Your Comment*"></textarea>
-                        </div>
-                      </div>
-                      <button type="submit" className="btn btn-primary">Post Comment</button>
-
-                    </form>
-
-                  </div>
-
-                </div>
-                {/* <!-- End blog comments --> */}
-
               </div>
 
               <div className="col-lg-4">
