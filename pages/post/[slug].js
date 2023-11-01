@@ -42,8 +42,8 @@ const Post = ({ post = {} }) => {
             <div className="container position-relative">
               <div className="row d-flex justify-content-center">
                 <div className="col-lg-6 text-center">
-                  <h2>Blog Details</h2>
-                  <p>These blogs are to increase your economic knowledge of current affair and basics of economics.</p>
+                  <h2>Ekonopro Blogs</h2>
+                  <p>To enhance your knowledge of current affairs and economics.</p>
                 </div>
               </div>
             </div>
@@ -66,7 +66,7 @@ const Post = ({ post = {} }) => {
 
             <div className="row g-5">
 
-              <div className="col-lg-8">
+              <div className="col-lg-12">
 
                 <article className="blog-details">
 
@@ -75,7 +75,7 @@ const Post = ({ post = {} }) => {
                     {mainImage && (
                       <img
             src={urlFor(mainImage)
-                        .url()} alt="post image" className="img-fluid" />
+                        .url()} style={{height:300, width:'100%', objectFit:'cover', objectPosition:'80% 50%'}} alt="post image" className="img-fluid" />
                     )}
                   </picture>
                   </div>
@@ -139,28 +139,28 @@ const Post = ({ post = {} }) => {
 
               </div>
 
-              <div className="col-lg-4">
+              {/* <div className="col-lg-4">
 
-                <div className="sidebar">
+                <div className="sidebar"> */}
 
-                  <div className="sidebar-item search-form">
+                  {/* <div className="sidebar-item search-form">
                     <h3 className="sidebar-title">Search</h3>
                     <form action="" className="mt-3">
                       <input type="text" className='bg-white' />
                       <button type="submit"><i className="bi bi-search"></i></button>
                     </form>
-                  </div>
+                  </div> */}
                   {/* <!-- End sidebar search formn--> */}
 
-                  <div className="sidebar-item categories">
+                  {/* <div className="sidebar-item categories">
                     <h3 className="sidebar-title">Categories</h3>
                     <ul className="mt-3">
                       <li><Link href="#">General Knowledge <span>(25)</span></Link></li>
                     </ul>
-                  </div>
+                  </div> */}
                   {/* <!-- End sidebar categories--> */}
 
-                  <div className="sidebar-item recent-posts">
+                  {/* <div className="sidebar-item recent-posts">
                     <h3 className="sidebar-title">Recent Posts</h3>
 
                     <div className="mt-3">
@@ -172,7 +172,7 @@ const Post = ({ post = {} }) => {
                           <h4><Link href="blog-details.html">Nihil blanditiis at in nihil autem</Link></h4>
                           <time dateTime="2020-01-01">Jan 1, 2020</time>
                         </div>
-                      </div>
+                      </div> */}
                       {/* <!-- End recent post item--> */}
 
                     </div>
@@ -180,23 +180,23 @@ const Post = ({ post = {} }) => {
                   </div>
                   {/* <!-- End sidebar recent posts--> */}
 
-                  <div className="sidebar-item tags">
+                  {/* <div className="sidebar-item tags">
                     <h3 className="sidebar-title">Tags</h3>
                     <ul className="mt-3">
                       <li><Link href="#">Economics</Link></li>
                       <li><Link href="#">CUET</Link></li>
                       <li><Link href="#">Business</Link></li>
                     </ul>
-                  </div>
+                  </div> */}
                   {/* <!-- End sidebar tags--> */}
 
-                </div>
+                {/* </div> */}
                 {/* <!-- End Blog Sidebar --> */}
 
-              </div>
-            </div>
+              {/* </div> */}
+            {/* </div> */}
 
-          </div>
+          {/* </div> */}
         </section>
         {/* <!-- End Blog Details Section --> */}
 

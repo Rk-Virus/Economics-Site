@@ -8,7 +8,7 @@ import { ArrowRight, ArrowLeft } from 'react-bootstrap-icons';
 
 // fetching data 
 const fetchData = async (page) =>{
-    const apiKey = '9553887deab04029a3c846ebeb1dfccd'
+    const apiKey = process.env.NEXT_PUBLIC_NEWS_API_KEY;
     const url = `https://newsapi.org/v2/top-headlines?country=in&apiKey=${apiKey}&page=${page}&pageSize=4`
     const data = await fetch(url)
     const parsedData = await data.json()

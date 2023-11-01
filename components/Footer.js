@@ -16,10 +16,10 @@ function Footer() {
                 </Link>
                 <p>The ultimate purpose of learning economics, offcourse is to understand and promote enhancement of well-being</p>
                 <div className="social-links d-flex mt-4">
-                  <Link href="https://twitter.com/ekonopro?t=D9rgARBNIXkw77PzW2BUXA&s=09" className="twitter"><i className="bi bi-twitter"></i></Link>
-                  <Link href="https://www.facebook.com/profile.php?id=100087708252044&is_tour_dismissed=true" className="facebook"><i className="bi bi-facebook"></i></Link>
-                  <Link href="https://www.instagram.com/ekonopro/" className="instagram"><i className="bi bi-instagram"></i></Link>
-                  <Link href="https://www.linkedin.com/in/econo-pro-068a95256/" className="linkedin"><i className="bi bi-linkedin"></i></Link>
+                  <Link target='_blank' href="https://twitter.com/ekonopro?t=D9rgARBNIXkw77PzW2BUXA&s=09" className="twitter"><i className="bi bi-twitter"></i></Link>
+                  <Link target='_blank' href="https://www.facebook.com/profile.php?id=100087708252044&is_tour_dismissed=true" className="facebook"><i className="bi bi-facebook"></i></Link>
+                  <Link target='_blank' href="https://www.instagram.com/ekonopro/" className="instagram"><i className="bi bi-instagram"></i></Link>
+                  <Link target='_blank' href="https://www.linkedin.com/in/econo-pro-068a95256/" className="linkedin"><i className="bi bi-linkedin"></i></Link>
                 </div>
               </div>
 
@@ -39,7 +39,7 @@ function Footer() {
                 <ul>
                   <li><Link href="#about">Interactive Learning</Link></li>
                   <li><Link href="#about">Lesson Plans and Curriculum Resources</Link></li>
-                  <li><Link href="#about">News Analyse</Link></li>
+                  {/* <li><Link href="#about">News Analyse</Link></li> */}
                   <li><Link href="#about">Career Information</Link></li>
                 </ul>
               </div>
@@ -47,9 +47,7 @@ function Footer() {
               <div className="col-lg-3 col-md-12 footer-contact text-center text-md-start">
                 <h4>Contact Us</h4>
                 <p>
-                  A108 Adam Street <br />
-                  New York, NY 535022<br />
-                  United States <br /><br />
+                311 T/F Vardhman Sunder Plaza MLU Plot No 12 sector 12, Dwarka New Delhi 110078 <br /><br />
                   <strong>Phone:</strong> <Link href='tel:+1 55895548855'>+1 5589 55488 55</Link> <br />
                   <strong>Email:</strong> <Link href='mailto:econopro@gmail.com'>econopro@gmail.com</Link> <br />
                 </p>

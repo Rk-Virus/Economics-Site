@@ -1,3 +1,6 @@
+const dotenv = require('dotenv');
+dotenv.config();
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
@@ -11,6 +14,6 @@ module.exports = {
     styledComponents: true
   },
   images: {
-    domains: ['example.com'],
+    domains: ['ekonopro.com'],
   },
 }

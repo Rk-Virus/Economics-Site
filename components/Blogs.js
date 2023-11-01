@@ -3,8 +3,6 @@ import Link from 'next/link'
 import Image from 'next/image'
 import client from '../client'
 import imageUrlBuilder from '@sanity/image-url'
-import { PortableText } from '@portabletext/react'
-import Pagination from './Pagination'
 
 function urlFor(source) {
   return imageUrlBuilder(client).image(source)
@@ -82,8 +80,6 @@ function Blogs({ posts }) {
             </div>
             {/* <!-- End post list item --> */ }
           })}
-
-          <Pagination/>
 
         </div>
       </section>

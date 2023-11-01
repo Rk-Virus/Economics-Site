@@ -37,16 +37,15 @@ function OurServices() {
           {/* <a href="#" className="readmore stretched-link">Read more <i className="bi bi-arrow-right"></i></a> */}
         </div>
       </div>
-      <div className="col-lg-4 col-md-6">
+      {/* <div className="col-lg-4 col-md-6">
         <div className="service-item position-relative">
           <div className="icon">
             <i className="bi bi-newspaper"></i>
           </div>
           <h3> News Analyse</h3>
           <p> We provide news and analysis of current events in the economy and financial markets, to make learners up-to-date and develop a deeper understanding of ECONOMICS concepts.</p>
-          {/* <a href="#" className="readmore stretched-link">Read more <i className="bi bi-arrow-right"></i></a> */}
         </div>
-      </div>
+      </div> */}
       <div className="col-lg-4 col-md-6">
         <div className="service-item position-relative">
           <div className="icon">

@@ -21,8 +21,8 @@ function Header() {
                 {/* <li><Link href="#portfolio">Portfolio</Link></li> */}
                 {/* <li><Link href="#team">Team</Link></li> */}
                 <li><Link href="#recent-posts">Blog</Link></li>
-                <li><Link href="#recent-news">News</Link></li>
-                <li><Link href="#Quizes">Quizes</Link></li>
+                {/* <li><Link href="#recent-news">News</Link></li> */}
+                {/* <li><Link href="#Quizes">Quizes</Link></li> */}
                 {/* <li className="dropdown"><Link href="#"><span>Drop Down</span> <i className="bi bi-chevron-down dropdown-indicator"></i></Link>
                   <ul>
                     <li><Link href="#">Drop Down 4</Link></li>

@@ -15,7 +15,6 @@ function Contact() {
 
     <div className="section-header text-black">
       <h2>Contact</h2>
-      <p>Nulla dolorum nulla nesciunt rerum facere sed ut inventore quam porro nihil id ratione ea sunt quis dolorem dolore earum</p>
     </div>
 
     <div className="row gx-lg-0 gy-4">
@@ -26,7 +25,7 @@ function Contact() {
             <i className="bi bi-geo-alt flex-shrink-0"></i>
             <div>
               <h4>Location:</h4>
-              <p>A108 Adam Street, New York, NY 535022</p>
+              <p>311 T/F Vardhman Sunder Plaza MLU Plot No 12 sector 12, Dwarka New Delhi 110078</p>
             </div>
           </div>
           {/* <!-- End Info Item --> */}
@@ -35,7 +34,7 @@ function Contact() {
             <i className="bi bi-envelope flex-shrink-0"></i>
             <div>
               <h4>Email:</h4>
-              <p>info@example.com</p>
+              <p>econopro@gmail.com</p>
             </div>
           </div>
           {/* <!-- End Info Item --> */}
@@ -53,7 +52,7 @@ function Contact() {
             <i className="bi bi-clock flex-shrink-0"></i>
             <div>
               <h4>Open Hours:</h4>
-              <p>Mon-Sat: 11AM - 23PM</p>
+              <p>Mon-Sat: 11AM - 10PM</p>
             </div>
           </div>
           {/* <!-- End Info Item --> */}

@@ -61,12 +61,6 @@ export default function Home({ posts, quizes }) {
   )
 }
 
-// const client = createClient({
-//   projectId: "iuvwtgif",
-//   dataset: "production",
-//   apiVersion: "2022-03-25",
-//   useCdn: false
-// });
 
 export async function getStaticProps() {
   const posts = await client.fetch(
